@@ -10,23 +10,14 @@ const Button =() =>{
 const [click, setClick] = useState(0)
 
 
-const clickedEvent = () =>{
-setClick( click + 1)
-}
-
-const DecrementCLick = () =>{
-    setClick(click  - 1 )
-}
- 
-
 return(
     <div className="btn-container" >
 
-    <button onClick={clickedEvent}>
+    <button onClick={() => setClick(click +1)}>
         Counter Increment
     </button>
 
-    <button onClick={DecrementCLick}>
+    <button onClick={()=> setClick(click - 1)}>
         counter Decrement
     </button>
 
