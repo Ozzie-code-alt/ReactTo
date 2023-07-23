@@ -1,0 +1,25 @@
+body{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 100vh;
+}
+
+
+
+.container{
+  display: grid;
+  justify-content: center;
+  align-self: center;
+}
+
+.container .btn-container{
+  display: grid;
+  justify-content: center;
+  align-self: center;
+}
+.container h1{
+  text-align: center;
+}
